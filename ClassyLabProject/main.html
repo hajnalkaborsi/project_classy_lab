@@ -14,6 +14,7 @@
     <script src="js/bootstrap.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/16474254a0.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -31,9 +32,9 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">My photo album</a>
                 </li>
-                <li class="nav-item dropdown">
+                <!--<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown
                     </a>
@@ -46,12 +47,17 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" >Disabled</a>
-                </li>
+                </li>-->
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+           <!-- <div class="social-media-container">
+                <div class="social-m-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="social-m-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </div>-->
+            <a href="#" class="sign-in-link" data-bs-toggle="modal" data-bs-target="#signUpModal" data-bs-whatever="@mdo">Sign in <span class="sign-in-icon"><i class="fas fa-sign-in-alt"></i></span></a>
         </div>
     </div>
 </nav>
@@ -190,6 +196,34 @@
                     </div>
                 </form>
                 <button type="submit" class="btn btn-primary classy-button">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal sign up-->
+
+<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signUpModalLabel">Sign up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                        <input type="password" class="form-control form-control-password" id="inputPassword3">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label remember-me" for="exampleCheck1">Remember me</label>
+                        <p class="forgotten-password"><a href="#">Forgot your password?</a></p>
+                    </div>
+                </form>
+                <button type="submit" class="btn btn-primary classy-button">Sign In</button>
+                <p class="create-account"><a href="#">Create an account</a> and share your memories!</p>
             </div>
         </div>
     </div>

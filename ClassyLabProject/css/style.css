@@ -34,6 +34,20 @@ p {
         margin: 80px 0 40px 0; }
 }
 
+.social-m-icon {
+    font-size: 20px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+.sign-in-link {
+    color: black;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+.sign-in-icon {
+    color: black;
+}
 /* About the page */
 .head-container {
     background-image: url("../images/header2.jpg");
@@ -299,3 +313,20 @@ p {
         background-color: #E2B1AD;
         border-color: #E2B1AD;
     }
+
+    /* Sign up modal */
+
+.form-control-password {
+    margin-bottom: 5px;
+}
+.remember-me {
+    display: inline-block;
+}
+.forgotten-password {
+    display: inline-block;
+    float: right;
+}
+
+.create-account {
+    padding-top:5px;
+}
